@@ -1,5 +1,20 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faFacebook,
+  faTwitter,
+  faGithub,
+  faWhatsapp
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+library.add(
+  faFacebook,
+  faTwitter,
+  faGithub,
+  faWhatsapp,
+  faEnvelope);
 
 export default function Home() {
   return (
@@ -65,19 +80,35 @@ export default function Home() {
           </div>
           <ul className={styles.redes}>
             <li>
-              <a href=""><i className="fa-brands fa-facebook" style={{ color: "#ffffff" }}></i><span>Facebook</span></a>
+              <a href="">
+                <FontAwesomeIcon icon="fa-brands fa-facebook" style={{ color: "#ffffff" }} />
+                <span>Facebook</span>
+              </a>
             </li>
             <li>
-              <a href=""><i className="fa-brands fa-github" style={{ color: "#ffffff" }}></i><span>GitHub</span></a>
+              <a href="">
+                <FontAwesomeIcon icon="fa-brands fa-github" style={{ color: "#ffffff" }} />
+                <span>GitHub</span>
+              </a>
             </li>
             <li>
-              <a href=""><i className="fa-brands fa-twitter" style={{ color: "#ffffff" }}></i><span>Twitter</span></a>
+              <a href="">
+                <FontAwesomeIcon icon="fa-brands fa-twitter" style={{ color: "#ffffff" }} />
+                <span>Twitter</span>
+              </a>
             </li>
             <li>
-              <a href=""><i className="fa-sharp fa-regular fa-envelope" style={{ color: "#ffffff" }}></i><span>Send an email</span></a>
+              <a href="">
+                <FontAwesomeIcon icon="fa-regular fa-envelope" />
+                <i className="fa-sharp fa-regular fa-envelope" style={{ color: "#ffffff" }}></i>
+                <span>Send an email</span>
+              </a>
             </li>
             <li>
-              <a href=""><i className="fa-brands fa-whatsapp" style={{ color: "#ffffff" }}></i><span>Call me</span></a>
+              <a href="">
+                <FontAwesomeIcon icon="fa-brands fa-whatsapp" style={{ color: "#ffffff" }} />
+                <span>Call me</span>
+              </a>
             </li>
           </ul>
         </section>

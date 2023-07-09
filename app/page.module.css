@@ -199,6 +199,14 @@ flex-direction: column;
   font-size: 24px;
   text-decoration: none;
   color: white;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 6px;
+  /* height: 10px; */
+}
+
+.contact>ul>li>a>svg {
+  width: 30px;
 }
 
 .contact>ul>li>a>i {
