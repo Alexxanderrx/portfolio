@@ -98,8 +98,11 @@
 .trabajos {
   text-align: center;
   background-color: rgb(73, 85, 128);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  height: 110rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .trabajos>h2 {
@@ -122,9 +125,12 @@
 .project {
   background-color: rgb(49, 55, 66);
   border: solid transparent 3px;
-  margin-top: 30px;
+  /* margin-top: 30px;
   margin-bottom: 30px;
-
+   */
+  /* padding-bottom: 10px; */
+  width: 400px;
+  height: 460px;
 }
 
 .project:hover {
@@ -132,26 +138,33 @@
   transition: all 0.5s;
 }
 
-.trabajos>.proyectos>a {
+.proyectos>a {
   text-decoration: none;
-
+  /* height: 1000px; */
 }
 
-.trabajos>.proyectos>a>.project>p {
+.project>p {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  padding: 8px;
   /* text-decoration: none; */
 }
 
-.trabajos>.proyectos>a>.project>p>span {
+.project>img {
+  width: 100%;
+  height: 89%;
+  /* overflow: scroll; */
+}
+
+.project>p>span {
   color: transparent;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
 /* El :hover va en donde pasa el mouse y el afectado sera la ultima clase colocada en este caso "span" */
-.trabajos>.proyectos>a>.project:hover>p>span {
+.project:hover>p>span {
   color: #c13145;
   transition: all 0.5s;
 }
@@ -221,4 +234,99 @@ flex-direction: column;
   height: 80px;
   background-color: #c13145;
   border-top: 1px solid #c13145;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .trabajos>h2 {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .trabajos {
+    height: 140rem;
+  }
+
+  .project {
+    width: 240px;
+    height: 280px;
+    /* border: 1px solid red; */
+  }
+
+
+  .project>img {
+    height: 82%;
+  }
+
+  .contact {
+    height: 40rem;
+  }
+
+  .contact>ul {
+    flex-direction: column;
+  }
+
+  .contact>ul>li>a {
+    gap: 20px;
+  }
+
+  .contact>ul>li>a>span {
+    font-size: 20px;
+  }
+
+  .contact>.contact_text>h2 {
+    font-size: 25px;
+  }
+
+  .contact>.contact_text>p {
+    font-size: 13px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .trabajos>h2 {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .trabajos {
+    height: 75rem;
+  }
+
+  .project {
+    width: 240px;
+    height: 280px;
+    /* border: 1px solid red; */
+  }
+
+
+  .project>img {
+    height: 82%;
+  }
+
+  .contact {
+    height: 40rem;
+  }
+
+  .contact>ul {
+    flex-direction: column;
+  }
+
+  .contact>ul>li>a {
+    gap: 20px;
+  }
+
+  .contact>ul>li>a>span {
+    font-size: 20px;
+  }
+
 }

@@ -40,27 +40,31 @@ export default function Home() {
           <div className={styles.proyectos}>
             <a href="https://alexxanderrx.github.io/Windbnb_project/" target="_blank">
               <div className={styles.project}>
-                <img src="http://placekitten.com/400/400" />
+                <img src="./windbnb.jpg" />
                 <p><span> &#60; </span>Windbnb<span> / &#62; </span></p>
               </div>
-            </a><a href="https://alexxanderrx.github.io/CalcularEdad.github.io/" target="_blank">
+            </a>
+            <a href="https://alexxanderrx.github.io/CalcularEdad.github.io/" target="_blank">
               <div className={styles.project}>
-                <img src="http://placekitten.com/400/400" />
+                <img src="./calcularEdad.jpg" />
                 <p><span> &#60; </span>Calcular Edad<span> / &#62; </span></p>
               </div>
-            </a><a href="https://alexxanderrx.github.io/TipSelector/" target="_blank">
+            </a>
+            <a href="https://alexxanderrx.github.io/TipSelector/" target="_blank">
               <div className={styles.project}>
-                <img src="http://placekitten.com/400/400" />
+                <img src="./splitter.jpg" />
                 <p><span> &#60; </span>TipSelector<span> / &#62; </span></p>
               </div>
-            </a><a href="https://weather-app-ivory-one.vercel.app/" target="_blank">
+            </a>
+            <a href="https://weather-app-ivory-one.vercel.app/" target="_blank">
               <div className={styles.project}>
-                <img src="http://placekitten.com/400/400" />
+                <img src="./wheaterApp.jpg" alt='wheaterApp' />
                 <p><span> &#60; </span>Weather App<span> / &#62; </span></p>
               </div>
-            </a><a href="https://poke-app-weld.vercel.app/" target="_blank">
+            </a>
+            <a href="https://poke-app-weld.vercel.app/" target="_blank">
               <div className={styles.project}>
-                <img src="http://placekitten.com/400/400" />
+                <img src="./pokeApp.jpg" />
                 <p><span> &#60; </span>Pokémon App<span> / &#62; </span></p>
               </div>
             </a>
@@ -78,15 +82,15 @@ export default function Home() {
             <h2>Lets work together...</h2>
             <p>How do you take your coffe?</p>
           </div>
-          <ul className={styles.redes}>
+          <ul>
             <li>
-              <a href="">
+              <a href="https://www.facebook.com/Alexxanderrx/">
                 <FontAwesomeIcon icon="fa-brands fa-facebook" style={{ color: "#ffffff" }} />
                 <span>Facebook</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://github.com/Alexxanderrx">
                 <FontAwesomeIcon icon="fa-brands fa-github" style={{ color: "#ffffff" }} />
                 <span>GitHub</span>
               </a>
@@ -98,9 +102,8 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="mailto:alexmorales196@gmail.com">
                 <FontAwesomeIcon icon="fa-regular fa-envelope" />
-                <i className="fa-sharp fa-regular fa-envelope" style={{ color: "#ffffff" }}></i>
                 <span>Send an email</span>
               </a>
             </li>
@@ -113,7 +116,7 @@ export default function Home() {
           </ul>
         </section>
         <footer className={styles.footer}>
-
+          <p>Created by Alexxanderrx © Copyright 2023</p>
         </footer>
       </div>
 
