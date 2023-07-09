@@ -23,12 +23,6 @@ export default function Home() {
         <section id='trabajos' className={styles.trabajos}>
           <h2><u>There are some of my proyects</u></h2>
           <div className={styles.proyectos}>
-            <a href="#" target="_blank">
-              <div className={styles.project}>
-                <img src="http://placekitten.com/400/400" />
-                <p><span> &#60; </span>Proyecto #1<span> / &#62; </span></p>
-              </div>
-            </a>
             <a href="https://alexxanderrx.github.io/Windbnb_project/" target="_blank">
               <div className={styles.project}>
                 <img src="http://placekitten.com/400/400" />
@@ -53,6 +47,12 @@ export default function Home() {
               <div className={styles.project}>
                 <img src="http://placekitten.com/400/400" />
                 <p><span> &#60; </span>Pokémon App<span> / &#62; </span></p>
+              </div>
+            </a>
+            <a href="#" target="_blank">
+              <div className={styles.project}>
+                <img src="http://placekitten.com/400/400" />
+                <p><span> &#60; </span>Proyecto #1<span> / &#62; </span></p>
               </div>
             </a>
           </div>
